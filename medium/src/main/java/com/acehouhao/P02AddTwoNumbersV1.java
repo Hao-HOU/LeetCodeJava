@@ -13,6 +13,13 @@ class ListNode {
     }
 }
 
+/**
+ * 第一次提交：始终只能输出2个数字，发现链表第二个元素始终被重置，故引入temp来记住链表头部，然后追加next；
+ * 第二次提交：1999999999，9用例报错，把变量大部分改为long，该用例通过，但更大的数值不能通过；
+ * 第三次提交：为了保证不溢出，用了BigInteger，但是发现LeetCode不能使用BigInteger。
+ * 综上，需要考虑新的解法，见版本2，即P02AddTwoNumbersV2.java！
+ */
+
 public class P02AddTwoNumbersV1 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         BigInteger value1 = BigInteger.valueOf(0);
