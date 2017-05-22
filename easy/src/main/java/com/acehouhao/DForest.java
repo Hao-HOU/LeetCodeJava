@@ -61,6 +61,5 @@ public class DForest {
         d = in.nextInt();
 
         System.out.println("最小分离集s顶点树为：" + greedy(d));
-
     }
 }
