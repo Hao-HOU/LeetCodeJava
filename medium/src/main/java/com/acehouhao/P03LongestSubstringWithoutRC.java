@@ -32,7 +32,10 @@ public class P03LongestSubstringWithoutRC {
     }
 
     public static void main(String[] args) {
-        String s = "result";
+        long start = System.currentTimeMillis();
+        String s = "thebackingHashMapinstancehasthespecifiedinitialcapacityandthespecifiedloadfactor";
         System.out.println(lengthOfLongestSubstring(s));
+        long end = System.currentTimeMillis();
+        System.out.println("耗时：" + (end - start) + "ms");
     }
 }
